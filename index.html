@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Website Component</title>
-	<link rel="stylesheet" href="css/global.css">
-	<link rel="stylesheet" href="css/compponents/header.css">
-	<link rel="stylesheet" href="css/compponents/hero.css">
-	<link rel="stylesheet" href="css/compponents/carousel.css">
-	<link rel="stylesheet" href="css/compponents/card.css">
-	<link rel="stylesheet" href="css/compponents/section.css">
-	<link rel="stylesheet" href="css/compponents/accordion.css">
-	<link rel="stylesheet" href="css/compponents/form.css">
-</head>
-<body>
-	<header id="header"></header>
-	<div>
-		<div id="hero"></div>
-		<div id="carousel"></div>
-		<div id="card"></div>
-		<div id="section"></div>
-		<div id="accordion"></div>
-		<div id="form"></div>
-	</div>
-	<footer id="footer"></footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Component</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/compponents/header.css">
+    <link rel="stylesheet" href="css/compponents/hero.css">
+    <link rel="stylesheet" href="css/compponents/carousel.css">
+    <link rel="stylesheet" href="css/compponents/card.css">
+    <link rel="stylesheet" href="css/compponents/section.css">
+    <link rel="stylesheet" href="css/compponents/accordion.css">
+    <link rel="stylesheet" href="css/compponents/form.css">
+  </head>
+  <body>
+    <header id="header"></header>
+    <div>
+      <div id="hero"></div>
+      <div id="carousel"></div>
+      <div id="card"></div>
+      <div id="section"></div>
+      <div id="accordion"></div>
+      <div id="form"></div>
+    </div>
+    <footer id="footer"></footer>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			fetch('components/header.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('header').innerHTML = data);
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch('components/header.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('header').innerHTML = data);
 
-			fetch('components/hero.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('hero').innerHTML = data);
+        fetch('components/hero.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('hero').innerHTML = data);
 
-			fetch('components/carousel.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('carousel').innerHTML = data);
+        fetch('components/carousel.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('carousel').innerHTML = data);
 
-			fetch('components/card.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('card').innerHTML = data);
+        fetch('components/card.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('card').innerHTML = data);
 
-			fetch('components/section.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('section').innerHTML = data);
+        fetch('components/section.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('section').innerHTML = data);
 
-			fetch('components/accordion.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('accordion').innerHTML = data);
+        fetch('components/accordion.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('accordion').innerHTML = data);
 
-			fetch('components/form.html')
-				.then(response => response.text())
-				.then(data => document.getElementById('form').innerHTML = data);
-		});
-	</script>
-</body>
+        fetch('components/form.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('form').innerHTML = data);
+      });
+    </script>
+  </body>
 </html>
