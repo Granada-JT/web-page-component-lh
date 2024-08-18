@@ -6,9 +6,17 @@
 
 body {
 	background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
+  width: 100vw;
+}
+
+main div {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,44 +30,44 @@ header {
 
 #hero {
   border: 2px solid black;
-  min-height: 40px;
+  height: 600px;
   min-width: 100%;
   margin: 0 0 45px 0;
 }
 
 #carousel {
   border: 2px solid black;
-  min-height: 40px;
+  height: 263px;
   min-width: 100%;
   margin: 45px 0;
 }
 
 #card {
   border: 2px solid black;
-  min-height: 40px;
-  min-width: 100%;
-  margin: 45px 0;
+  height: 847px;
+  max-width: 1256px;
+  margin: 45px auto 45px auto;
 }
 
 #section {
   border: 2px solid black;
-  min-height: 40px;
-  min-width: 100%;
-  margin: 45px 0;
+  height: 753px;
+  max-width: 1256px;
+  margin: 45px auto 45px auto;
 }
 
 #accordion {
   border: 2px solid black;
-  min-height: 40px;
-  min-width: 100%;
-  margin: 45px 0;
+  height: 803px;
+  max-width: 1256px;
+  margin: 45px auto 45px auto;
 }
 
 #form {
   border: 2px solid black;
-  min-height: 40px;
-  min-width: 100%;
-  margin: 45px 0;
+  height: 655px;
+  max-width: 1256px;
+  margin: 45px auto 45px auto;
 }
 
 footer {
