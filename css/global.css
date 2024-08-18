@@ -74,4 +74,6 @@ footer {
   border: 2px solid black;
   height: 64px;
   min-width: 100%;
+  background: var(--main-yellow) 0% 0% no-repeat padding-box;
+  background: #FFF000 0% 0% no-repeat padding-box;
 }
