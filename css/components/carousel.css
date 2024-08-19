@@ -1,3 +1,10 @@
-#carousel {
-	background-color: aquamarine;
+#carousel p {
+  display: flex;
+	justify-content: flex-start;
+  align-items: flex-start;
+  width: 1256px;
+  height: 100%;
+  font: normal normal bold 48px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
 }
