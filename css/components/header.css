@@ -1,4 +1,42 @@
 #header {
 	background: var(--main-yellow) 0% 0% no-repeat padding-box;
 	background: #FFF000 0% 0% no-repeat padding-box;
+	display: flex;
+	align-items: center;
+}
+
+#logo {
+  margin: 7px 0 7px 15px;
+}
+
+#header-items {
+	display: flex;
+	margin-left: 80px;
+}
+
+#header-items p {
+	margin: 0 20px;
+	text-align: left;
+	font: bold 20px/26px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+#icon-external {
+  margin: 0px 0px 1px -10px;
+}
+
+#header > button {
+  margin: 7px 15px 7px auto;
+  height: 50px;
+  width: 182px;
+  cursor: pointer;
+  text-align: center;
+  font: normal normal bold 20px/26px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  background-color: #E3007F;
+  border: none;
+  box-shadow: none;
 }
