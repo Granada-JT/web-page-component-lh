@@ -1,3 +1,25 @@
 #hero {
-	background-color: rgb(255, 127, 244);
+  background-image: url('../../assets/images/hero-bg_pc@2x.png');
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 5px #FFFFFF;
+}
+
+#content p:nth-child(1) {
+  font: normal normal bold 120px/159px Roboto;
+}
+
+#content p:nth-child(2) {
+  font: normal normal bold 48px/63px Roboto;
 }
