@@ -38,35 +38,35 @@ header {
   border: 2px solid black;
   height: 263px;
   min-width: 100%;
-  margin: 45px 0;
+  margin: 90px 0;
 }
 
 #card {
   border: 2px solid black;
   height: 847px;
   max-width: 1256px;
-  margin: 45px auto 45px auto;
+  margin: 0 auto 90px auto;
 }
 
 #section {
   border: 2px solid black;
   height: 753px;
   max-width: 1256px;
-  margin: 45px auto 45px auto;
+  margin: 0 auto 90px auto;
 }
 
 #accordion {
   border: 2px solid black;
   height: 803px;
   max-width: 1256px;
-  margin: 45px auto 45px auto;
+  margin: 0 auto 90px auto;
 }
 
 #form {
   border: 2px solid black;
   height: 655px;
   max-width: 1256px;
-  margin: 45px auto 45px auto;
+  margin: 0 auto 90px auto;
 }
 
 footer {
