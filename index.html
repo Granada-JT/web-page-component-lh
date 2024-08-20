@@ -29,10 +29,43 @@
         fetch('components/hero.html')
           .then(response => response.text())
           .then(data => document.getElementById('hero').innerHTML = data);
-
+        
         fetch('components/carousel.html')
           .then(response => response.text())
-          .then(data => document.getElementById('carousel').innerHTML = data);
+          .then(data => {
+            document.getElementById('carousel').innerHTML = data;
+
+            const carouselImages = document.querySelector('#carousel-images');
+            const prevButton = document.querySelector('.carousel-arrow.prev');
+            const nextButton = document.querySelector('.carousel-arrow.next');
+
+            let currentMargin = 0;
+            const imageWidth = 318;
+            const totalImages = document.querySelectorAll('#carousel-images img').length;
+            const maxMargin = -(imageWidth * (totalImages - 1));
+
+            const updateCarousel = () => {
+              console.log('currentMargin:', currentMargin)
+              carouselImages.style.marginLeft = `${currentMargin}px`;
+            };
+
+            // Margin limit steps in px: 0, 318, 636, 954, 1272 and 1590
+            prevButton.addEventListener('click', () => {
+              if (currentMargin <= 1272) {
+                currentMargin += imageWidth;
+                updateCarousel();
+              }
+            });
+
+            nextButton.addEventListener('click', () => {
+              if (currentMargin >= -1272) {
+                currentMargin -= imageWidth;
+                updateCarousel();
+              }
+            });
+
+            updateCarousel();
+          });
 
         fetch('components/card.html')
           .then(response => response.text())

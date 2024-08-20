@@ -1,3 +1,81 @@
-#carousel {
-	background-color: aquamarine;
+#carousel-container {
+  display: flex;
+  position: relative;
+  min-width: 100vw;
+  height: 100%;
+}
+
+#carousel-section {
+  width: 100%;
+  max-width: 1292px;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+#carousel-title {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+#carousel-title p {
+  font: normal normal bold 48px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  height: 63px;
+  width: 100%;
+  margin: 0 18px;
+}
+
+#carousel-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#carousel-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+#carousel-images img {
+  flex-shrink: 0;
+  margin-top: auto;
+  height: 170px;
+  width: 302px;
+}
+
+#carousel-images img:not(:last-child) {
+  margin-right: 16px;
+}
+
+#carousel-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 42px;
+  pointer-events: none;
+}
+
+.carousel-arrow {
+  width: 36px;
+  height: 36px;
+  z-index: 20;
+  pointer-events: auto;
+  cursor: pointer;
 }
