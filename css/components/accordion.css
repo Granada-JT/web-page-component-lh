@@ -1,3 +1,76 @@
 #accordion {
-	background-color: rgb(127, 255, 144);
+	justify-content: flex-start;
+	align-items: flex-start;
+  width: 100%;
+}
+
+#title {
+	text-align: left;
+	font: normal normal bold 48px/44px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+  margin-bottom: 30px;
+  height: 63px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #707070;
+  height: 66px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 66px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion-header p {
+  font: normal normal bold 20px/26px Roboto;
+  letter-spacing: 0px;
+  color: #707070;
+  margin-left: 20px;
+}
+
+.accordion-header img {
+  margin-right: 20.52px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  display: none;
+  width: 100%;
+  max-width: 1216px;
+  height: 130px;
+  border-top: 1px solid #707070;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.accordion-content p {
+  text-align: left;
+  font: normal normal normal 20px/26px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.accordion.open {
+  height: 236px;
+  transition: height 0.5s ease;
+}
+
+.accordion.open .accordion-header img {
+  transform: rotate(180deg);
 }
