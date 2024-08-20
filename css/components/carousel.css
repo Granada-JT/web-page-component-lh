@@ -1,10 +1,65 @@
-#carousel p {
+#carousel-section {
   display: flex;
-	justify-content: flex-start;
-  align-items: flex-start;
-  width: 1256px;
+  width: 100%;
+  max-width: 1292px;
   height: 100%;
+}
+
+#carousel-title {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+#carousel-title p {
   font: normal normal bold 48px/44px Roboto;
   letter-spacing: 0px;
   color: #333333;
+  height: 63px;
+  width: 100%;
+  margin: 0 18px;
+}
+
+#carousel-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#carousel-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#carousel-images img {
+  height: 100%;
+  width: auto;
+}
+
+#carousel-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.carousel-arrow {
+  width: 36px;
+  height: 36px;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
 }

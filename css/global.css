@@ -36,8 +36,9 @@ header {
 
 #carousel {
   height: 263px;
-  min-width: 100%;
+  width: 100vw;
   margin: 90px 0;
+  flex-wrap: wrap;
 }
 
 #card {
