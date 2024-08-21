@@ -60,7 +60,7 @@ header {
 }
 
 #form {
-  height: 655px;
+  height: 989px;
   max-width: 1256px;
   margin: 0 auto 90px auto;
 }
@@ -93,5 +93,11 @@ footer {
 
   #accordion {
     height: 803px;
+  }
+
+  #form {
+    height: 655px;
+    max-width: 1256px;
+    margin: 0 auto 90px auto;
   }
 }
