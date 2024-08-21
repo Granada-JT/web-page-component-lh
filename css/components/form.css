@@ -122,6 +122,35 @@
   height: 50px;
 }
 
+#radio-form-input {
+  height: 100%;
+  overflow: hidden;
+}
+
+#checkbox-form-input {
+  height: 100%;
+  overflow: hidden;
+}
+
+.form-row-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-row-content:nth-child(1) {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 376px) {
   .form-field {
     display: flex;
@@ -149,6 +178,20 @@
 
   .form-input select {
     width: 302px;
+  }
+
+  .form-row-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-row-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-row-content:nth-child(1) {
+    margin-bottom: 0;
   }
 }
 
