@@ -26,6 +26,7 @@
   color: #333333;
   height: 63px;
   width: 100%;
+  margin: 0 15px;
 }
 
 #carousel-row {
@@ -67,7 +68,7 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
-  margin-top: 42px;
+  margin: 42px 36px 0 36px;
   pointer-events: none;
 }
 
@@ -77,4 +78,16 @@
   z-index: 20;
   pointer-events: auto;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #carousel-arrows {
+    margin: 42px 0 0 0;
+  }
+}
+
+@media (min-width: 1256px) {
+  #carousel-title p {
+    margin: 0 18px;
+  }
 }
