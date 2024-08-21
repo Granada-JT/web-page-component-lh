@@ -129,6 +129,10 @@
     border-bottom: 1px solid #AAAAAA;
     width: 100%;
   }
+
+  #form-title p {
+    height: 63px;
+  }
   
   .form-label {
     width: 302px;
