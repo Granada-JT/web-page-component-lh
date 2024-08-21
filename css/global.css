@@ -54,7 +54,7 @@ header {
 }
 
 #accordion {
-  height: 803px;
+  height: 1125px;
   max-width: 1256px;
   margin: 0 auto 90px auto;
 }
@@ -89,5 +89,9 @@ footer {
     height: 753px;
     max-width: 1256px;
     margin: 0 auto 90px auto;
+  }
+
+  #accordion {
+    height: 803px;
   }
 }
