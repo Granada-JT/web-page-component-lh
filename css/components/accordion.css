@@ -2,6 +2,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
   width: 100%;
+  padding: 0 15px;
 }
 
 #accordion-title {
@@ -49,8 +50,8 @@
 .accordion-content {
   display: none;
   width: 100%;
-  max-width: 1216px;
-  height: 130px;
+  max-width: 315px;
+  height: 309px;
   border-top: 1px solid #707070;
   text-align: left;
   flex-wrap: wrap;
@@ -58,19 +59,43 @@
 
 .accordion-content p {
   text-align: left;
-  font: normal normal normal 20px/26px Roboto;
+  font: normal normal normal 16px/21px Roboto;
+  color: #707070;
   letter-spacing: 0px;
-  color: #333333;
-  margin-top: 20px;
+  margin-top: 15px;
   flex-wrap: wrap;
   overflow: hidden;
 }
 
 .accordion.open {
-  height: 236px;
+  height: 395px;
   transition: height 0.5s ease;
 }
 
 .accordion.open .accordion-header img {
   transform: rotate(180deg);
+}
+
+@media (min-width: 376px) {
+  .accordion-content {
+    padding: 0 0;
+    max-width: 1216px;
+    height: 130px;
+  }
+
+  .accordion-content p {
+    margin-top: 20px;
+    font: normal normal normal 20px/26px Roboto;
+  }
+
+  .accordion.open {
+    height: 236px;
+    transition: height 0.5s ease;
+  }
+}
+
+@media (min-width: 1272px) {
+  #accordion {
+    padding: 0 0;
+  }
 }
