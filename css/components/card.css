@@ -1,3 +1,95 @@
 #card {
-	background-color: rgb(242, 255, 127);
+  display: flex;
+}
+
+#card div {
+	display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#card-title {
+  text-align: left;
+  font: normal normal bold 48px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  margin-bottom: 30px;
+  min-height: 63px;
+}
+
+.column-title {
+  text-align: left;
+  font: normal normal bold 24px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  margin-bottom: 20px;
+  min-height: 32px;
+}
+
+.column-title p {
+  min-height: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#card-title p {
+  height: 63px;
+}
+
+#four-cards {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  min-height: 282px;
+}
+
+.card {
+  max-width: 302px;
+  height: 100%;
+}
+
+.card:nth-of-type(-n+3) {
+  margin-right: 16px;
+}
+
+.card img {
+  height: 170px;
+  width: 302px;
+}
+
+.col-card-title {
+  text-align: left;
+  font: normal normal bold 24px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  margin: 20px 0 15px 0;
+  overflow: hidden;
+}
+
+.col-card-content {
+  text-align: left;
+  font: normal normal normal 16px/24px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  height: 45px;
+  overflow: hidden;
+}
+
+#three-cards {
+  display: flex;
+  flex-direction: row;
+  min-height: 318px;
+}
+
+#three-cards > .card {
+  max-width: 408px;
+}
+
+#three-cards > .card img {
+  width: 408px;
+}
+
+#three-cards > .card:last-child {
+  margin-right: -16px;
 }
