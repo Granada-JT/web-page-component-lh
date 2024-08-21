@@ -42,9 +42,9 @@ header {
 }
 
 #card {
-  height: 847px;
+  height: 1750px;
   max-width: 1256px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 60px auto;
 }
 
 #section {
@@ -77,4 +77,11 @@ footer {
   font: normal normal normal 16px/21px Roboto;
   letter-spacing: 0px;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  #card {
+    height: 847px;
+    margin: 0 auto 90px auto;
+  }
 }
