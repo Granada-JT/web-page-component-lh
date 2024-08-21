@@ -120,7 +120,7 @@
   margin-right: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 376px) {
   #four-cards {
     display: flex;
     flex-direction: row;

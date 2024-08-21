@@ -48,7 +48,7 @@ header {
 }
 
 #section {
-  height: 753px;
+  height: 1300px;
   max-width: 1256px;
   margin: 0 auto 90px auto;
 }
@@ -79,9 +79,15 @@ footer {
   color: #333333;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 376px) {
   #card {
     height: 847px;
+    margin: 0 auto 90px auto;
+  }
+  
+  #section {
+    height: 753px;
+    max-width: 1256px;
     margin: 0 auto 90px auto;
   }
 }
