@@ -1,8 +1,8 @@
 #header {
-	background: var(--main-yellow) 0% 0% no-repeat padding-box;
-	background: #FFF000 0% 0% no-repeat padding-box;
-	display: flex;
-	align-items: center;
+  background: var(--main-yellow) 0% 0% no-repeat padding-box;
+  background: #FFF000 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
