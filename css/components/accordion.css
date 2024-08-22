@@ -1,15 +1,15 @@
 #accordion {
-	justify-content: flex-start;
-	align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   padding: 0 15px;
 }
 
 #accordion-title {
-	text-align: left;
-	font: normal normal bold 48px/44px Roboto;
-	letter-spacing: 0px;
-	color: #333333;
+  text-align: left;
+  font: normal normal bold 48px/44px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
   margin-bottom: 30px;
   height: 63px;
 }
